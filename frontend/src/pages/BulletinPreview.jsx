@@ -11,7 +11,8 @@ const BulletinPreview = () => {
         totals,
         averages,
         periodInfo,
-        overallAvg
+        overallAvg,
+        summary // AJOUT: Récupérer le summary
     } = location.state || {};
 
     const handlePrint = () => {
@@ -74,10 +75,11 @@ const BulletinPreview = () => {
                             <div className="text-[10px]">Paix-Travail-Patrie</div>
                             <div>Ministere de l'Education de base</div>
                             <div>Delegtion Regionale du Centre</div>
+                            <div>Delegation Departemental du Mfoundi</div>
                         </div>
 
                         <div className="text-center flex-1 mx-2">
-                            <div className="font-bold text-sm print:text-xs">GROUPE SCOLAIRE BILINGUE LA GRÂCE DE DIEU</div>
+                            <div className="font-extrabold text-sm print:text-xs">GROUPE SCOLAIRE BILINGUE LA GRÂCE DE DIEU</div>
                             <div className="text-[15px] font-bold print:text-sm">REPORT CARD</div>
                         </div>
 
@@ -86,6 +88,7 @@ const BulletinPreview = () => {
                             <div className="text-[10px]">Peace-Work-Fatherland</div>
                             <div>Ministry of Basic Education</div>
                             <div>Centre Regional Delegation</div>
+                            <div>Divisional Delegation of Mfoundi Division</div>
                         </div>
                     </div>
                 </div>
@@ -249,7 +252,7 @@ const BulletinPreview = () => {
                 </div>
 
                 {/* Bottom Section COMPACT - Single line with all information */}
-                <div className="flex justify-between items-start gap-2 print:gap-1 mb-2 print:mb-1" style={{ fontSize: '9px' }}>
+                <div className="flex justify-between items-start gap-2 print:gap-1 mt-10 mb-20 print:mb-1" style={{ fontSize: '9px' }}>
 
                     {/* Appreciation Legend compact */}
                     <div className="w-1/4 border border-gray-300 rounded p-1">
@@ -270,7 +273,6 @@ const BulletinPreview = () => {
                         <div className="grid grid-cols-3 gap-0.5 mb-1">
                             {['h1', 'h2', 'h3'].map((header, index) => (
                                 <div key={header} className="text-center">
-                                    {/* <div className="text-gray-600">Mont-{index + 1}</div> */}
                                     <div className="font-semibold">{periodHeaders[header]}</div>
                                 </div>
                             ))}
@@ -307,7 +309,7 @@ const BulletinPreview = () => {
                         </div>
                     </div>
 
-                    {/* Summary compact with ALL information */}
+                    {/* Summary compact with ALL information - CORRIGÉ */}
                     <div className="w-1/4 border-2 border-gray-400 rounded p-1">
                         <div className="font-semibold text-center mb-0.5">Summary of work</div>
 
@@ -319,17 +321,23 @@ const BulletinPreview = () => {
 
                             <div>
                                 <div className="text-gray-600">Appreciation (overall)</div>
-                                <div className="border border-gray-300 rounded p-0.5 min-h-[20px] text-center"></div>
+                                <div className="border border-gray-300 rounded p-0.5 min-h-[20px] text-center flex items-center justify-center">
+                                    {summary?.overallAppreciation || "-"}
+                                </div>
                             </div>
 
                             <div>
                                 <div className="text-gray-600">Position</div>
-                                <div className="border border-gray-300 rounded p-0.5 min-h-[20px] text-center"></div>
+                                <div className="border border-gray-300 rounded p-0.5 min-h-[20px] text-center flex items-center justify-center">
+                                    {summary?.position || "-"}
+                                </div>
                             </div>
 
                             <div>
                                 <div className="text-gray-600">Decision</div>
-                                <div className="border border-gray-300 rounded p-0.5 min-h-[20px] text-center"></div>
+                                <div className="border border-gray-300 rounded p-0.5 min-h-[20px] text-center flex items-center justify-center">
+                                    {summary?.decision || "-"}
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -340,8 +348,8 @@ const BulletinPreview = () => {
                             {['Teacher', 'Headmaster', 'Parent'].map((role) => (
                                 <div key={role} className="border border-gray-300 rounded p-1 text-center">
                                     <div className="font-semibold text-[8px]">{role}'s Visa</div>
-                                    <div className="h-8 border border-dashed border-gray-400 mt-0.5 flex items-center justify-center">
-                                        <span className="text-gray-500 text-[7px]">Signature & stamp</span>
+                                    <div className="h-8 mt-0.5 flex items-center justify-center">
+                                        {/* <span className="text-gray-500 text-[7px]">Signature & stamp</span> */}
                                     </div>
                                 </div>
                             ))}
@@ -350,7 +358,7 @@ const BulletinPreview = () => {
                 </div>
 
                 {/* Contact  */}
-                <div className="text-center text-[9px] bg-blue-50 border border-blue-200 rounded p-1 mt-1 print:mt-0">
+                <div className="text-center text-[9px] bg-blue-50 border border-blue-200 rounded p-1 mt-20 print:mt-10">
                     <div className="font-bold text-blue-800">Phone: +237 696 308 503 | Head Office: Yaounde - Nkolbisson (Quartier Mbouda)</div>
                 </div>
             </div>
