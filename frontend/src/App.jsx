@@ -7,6 +7,7 @@ import Dashboard from './pages/Dashboard';
 import AnglophoneSection from './pages/AnglophoneSection';
 import FrancophoneSection from './pages/FrancophoneSection';
 import BulletinForm from './pages/BulletinForm';
+import BulletinPreview from './pages/BulletinPreview';
 
 
 function App() {
@@ -24,7 +25,7 @@ function App() {
    {/* Routes pour les bulletins */}
         <Route path="/bulletin-anglophone" element={<BulletinForm />} />
         <Route path="/bulletin-francophone" element={<BulletinForm />} />
-    {/* <Route path="/preview" element={<BulletinPreview />} /> */}
+    <Route path="/preview" element={<BulletinPreview />} />
       </Routes>
     </Router>
   )
