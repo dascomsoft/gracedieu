@@ -84,7 +84,7 @@ export default function Dashboard() {
             onClick={() => navigate("/anglophone")}
             className="bg-linear-to-r from-blue-500 to-indigo-600 text-white px-6 py-3 rounded-xl font-semibold hover:opacity-90 transition-all"
           >
-            Section Anglophone 🇬🇧
+            Anglophone Section 🇬🇧
           </button>
         </div>
 

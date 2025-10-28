@@ -161,22 +161,22 @@ export default function FrancophoneSection() {
         </p>
 
         <div className="flex flex-col gap-4">
-          <button
+          {/* <button
             onClick={() => handleSelect("/petite-section")}
             className="w-full bg-linear-to-r from-pink-500 to-rose-600 text-white py-3 rounded-xl font-semibold shadow-md hover:scale-105 transition-transform"
           >
             Petite Section
-          </button>
+          </button> */}
 
           <button
-            onClick={() => handleSelect("/moyenne-section")}
+            onClick={() => handleSelect("/bulletin-maternelle")}
             className="w-full bg-linear-to-r from-yellow-400 to-orange-500 text-white py-3 rounded-xl font-semibold shadow-md hover:scale-105 transition-transform"
           >
-            Moyenne Section
+            Maternelle
           </button>
 
           <button
-            onClick={() => handleSelect("/bulletin-francophone")}
+            onClick={() => handleSelect("/primaire-francophone")}
             className="w-full bg-linear-to-r from-green-500 to-emerald-600 text-white py-3 rounded-xl font-semibold shadow-md hover:scale-105 transition-transform"
           >
             Classes Primaires
