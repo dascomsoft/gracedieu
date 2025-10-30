@@ -40,6 +40,8 @@
 
 
 
+
+
 {
   "name": "server",
   "version": "1.0.0",
@@ -47,6 +49,10 @@
   "scripts": {
     "start": "npm rebuild better-sqlite3 && node server.js"
   },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
   "dependencies": {
     "axios": "^1.12.2",
     "bcryptjs": "^3.0.2",
