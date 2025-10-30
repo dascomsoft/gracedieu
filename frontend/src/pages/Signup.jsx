@@ -15,7 +15,7 @@ export default function Signup() {
     setSuccess("");
 
     try {
-      const res = await axios.post("http://localhost:5000/api/signup", {
+      const res = await axios.post("https://gracedieu.onrender.com/api/signup", {
         username,
         password,
       });
@@ -30,7 +30,7 @@ export default function Signup() {
   };
 
   return (
-    <div className="flex items-center justify-center min-h-screen bg-gradient-to-br from-green-100 to-blue-200 px-4 sm:px-6 lg:px-8">
+    <div className="flex items-center justify-center min-h-screen bg-linear-to-br from-green-100 to-blue-200 px-4 sm:px-6 lg:px-8">
       <form
         onSubmit={handleSignup}
         className="bg-white shadow-lg rounded-lg p-6 sm:p-8 w-full max-w-sm sm:max-w-md md:max-w-lg lg:max-w-md"

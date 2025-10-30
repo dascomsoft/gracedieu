@@ -18,7 +18,7 @@ export default function Login() {
     setError("");
 
     try {
-      const res = await axios.post("http://localhost:5000/api/login", {
+      const res = await axios.post("https://gracedieu.onrender.com/api/login", {
         username,
         password,
       });
