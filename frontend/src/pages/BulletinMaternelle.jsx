@@ -507,27 +507,27 @@ const DOMAINES_TEMPLATE = [
     {
         key: "art",
         title: "CREATION ARTISTIQUE ET ACTIVITES MANUELLES",
-        activities: "Activités manuelles Colorisée Desai Peinture"
+        activities: "-Activités manuelles , Creation artistique"
     },
     {
         key: "sciences",
         title: "EVEIL SCIENTIFIQUE ET TECHNOLOGIQUE",
-        activities: "Education sensorielle et perceptive Initiation aux mathématiques Sciences et technologies Technologies de l'information et de la communication"
+        activities: "- Initiation aux Mthematiques , - Education Sensorielle et perceptive , -Technologie de l'information et de la communication , - Sciences et technologies"
     },
     {
         key: "langues",
-        title: "LANGUES ET COMMUNICATIONS",
-        activities: "Anglais Copie Graphisme Langage Langue nationale Lecture et écriture Poésie et compline Vocabulaire"
+        title: "Domaine 1 : LANGUES ET COMMUNICATIONS",
+        activities: "-Graphisme , -English , -Langues nationales , -Expression gestuelle"
     },
     {
         key: "motricite",
         title: "MOTRICITE GENERALE",
-        activities: "Athlétisme Gymnastique"
+        activities: "Motrice generale"
     },
     {
         key: "vie",
         title: "VIE COURANTE",
-        activities: "Education à la santé et à l'environnement Education à la santé et à la nutrition Education à la sécurité Education civique et morale"
+        activities: "-Education à la santé et à l'environnement"
     }
 ];
 
@@ -793,7 +793,7 @@ export default function BulletinMaternelle() {
                                         {PERIODE_OPTIONS.map(m => <option key={m}>{m}</option>)}
                                     </select>
                                 </th>
-                                <th className="border p-2 text-center w-32">Expression Domaine</th>
+                                <th className="border p-2 text-center w-32">Appreciation</th>
                             </tr>
                         </thead>
 
