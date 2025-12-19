@@ -1,6 +1,5 @@
 
-# React + Vite
-BIENVENUE/WELCOME
+
 # 📚 Grace de Dieu - Système de Génération de Bulletins Scolaires
 
 **Application web bilingue (français/anglais) pour la création et gestion automatisée de bulletins scolaires dans les écoles bilingues du Cameroun.**
