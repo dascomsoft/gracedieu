@@ -58,18 +58,15 @@ Dans les écoles bilingues camerounaises, les enseignants rencontrent fréquemme
 - 🔐 **Authentification** personnalisée avec sessions
 - 📄 **Génération PDF** avec jsPDF
 
-### 3.3 **Base de Données Élèves**
+## 4. 🔄 Phase 2 (En développement) : Gestion Séquentielle des Évaluations
+
+### 4.0 **Base de Données Élèves**
 Une base de données centralisée qui stocke pour chaque élève :
 - Informations personnelles (nom, prénom, date de naissance)
 - Historique académique complet
 - Bulletins de tous les trimestres
 - Évaluations par compétence
 - Commentaires des enseignants
-
----
-
-## 4. 🔄 Phase 2 (En développement) : Gestion Séquentielle des Évaluations
-
 ### 4.1 **Système de Fiche Élève Interactive**
 Chaque enseignant peut désormais :
 1. Accéder au profil élève en un clic
